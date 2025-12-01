@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Inicio - Ejercicio 22{% endblock %}
+{% block content %}
+<div class="p-4 bg-light rounded">
+  <h1>Bienvenido a Ejercicio 22</h1>
+  <p>Aplicación de ejemplo en Flask para gestionar tareas (CRUD) y exponer una API REST.</p>
+  {% if username %}
+    <p>Sesión iniciada como <strong>{{ username }}</strong>.</p>
+    <a class="btn btn-primary" href="{{ url_for('list_tasks') }}">Ver tareas</a>
+  {% else %}
+    <a class="btn btn-primary" href="{{ url_for('login') }}">Iniciar sesión</a>
+  {% endif %}
+</div>
+{% endblock %}

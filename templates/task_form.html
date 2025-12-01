@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}{{ action }} Tarea{% endblock %}
+{% block content %}
+  <h2>{{ action }} tarea</h2>
+  <form method="post">
+    <div class="mb-3">
+      <label class="form-label">Título</label>
+      <input name="title" class="form-control" value="{{ task.title if task else '' }}" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Descripción</label>
+      <textarea name="description" class="form-control">{{ task.description if task else '' }}</textarea>
+    </div>
+    {% if task %}
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" name="done" id="doneCheck" {% if task.done %}checked{% endif %}>
+      <label class="form-check-label" for="doneCheck">Hecho</label>
+    </div>
+    {% endif %}
+    <button class="btn btn-primary">{{ action }}</button>
+    <a class="btn btn-secondary" href="{{ url_for('list_tasks') }}">Cancelar</a>
+  </form>
+{% endblock %}
