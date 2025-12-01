@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Laptop Dell XPS 13",
+    "precio": 999.99,
+    "disponibilidad": "En stock"
+  },
+  {
+    "nombre": "Ratón Logitech MX Master",
+    "precio": 99.99,
+    "disponibilidad": "En stock"
+  },
+  {
+    "nombre": "Teclado Mecánico Cherry",
+    "precio": 149.99,
+    "disponibilidad": "Agotado"
+  }
+]

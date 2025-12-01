@@ -1,0 +1,14 @@
+[
+  {
+    "titulo": "Python es genial",
+    "descripcion": "Python es fácil de aprender"
+  },
+  {
+    "titulo": "Web Scraping fácil",
+    "descripcion": "Extraer datos es simple"
+  },
+  {
+    "titulo": "BeautifulSoup mola",
+    "descripcion": "Parsear HTML es fácil"
+  }
+]

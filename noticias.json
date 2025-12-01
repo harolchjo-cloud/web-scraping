@@ -1,0 +1,17 @@
+[
+  {
+    "titulo": "Últimas innovaciones en IA",
+    "url": "/articulo1",
+    "fecha": "2024-12-01"
+  },
+  {
+    "titulo": "Python domina desarrollo backend",
+    "url": "/articulo2",
+    "fecha": "2024-11-30"
+  },
+  {
+    "titulo": "Web scraping ético y legal",
+    "url": "/articulo3",
+    "fecha": "2024-11-29"
+  }
+]
